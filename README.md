@@ -31,13 +31,13 @@ BFFUF is an extension for Burp Suite that allows you to configure and run FFUF (
 ![](/static/configuration_terminal_request.png)
 
 - Config Video multi wordlists
-![](/static/multipleWordLists.mov)
+![](https://github.com/rodnt/bffuf/raw/main/static/multipleWordLists.mov)
 
 - Config 
-![](/static/config_bffuf.mov)
+![](https://github.com/rodnt/bffuf/raw/main/static/config_bffuf.mov)
 
 - Running video
-![](/static/running.mov)
+![](https://github.com/rodnt/bffuf/blob/main/static/running.mov)
 
 ## Usage
 
