@@ -29,8 +29,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
     @Override
     public void registerExtenderCallbacks(IBurpExtenderCallbacks callbacks) {
         this.callbacks = callbacks;
-        callbacks.printOutput("Author: opcod3r - github.com/rodnt");
-        callbacks.setExtensionName("bffuf");
+        callbacks.setExtensionName("BFFFUF Extender");
         callbacks.registerContextMenuFactory(this);
 
         configFilePath = System.getProperty("user.home") + "/.config/bffuf/bffuf.config.toml";
@@ -430,7 +429,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
             if (os.contains("mac")) {
                 cmdArray = new String[]{"/usr/bin/osascript", "-e", "tell application \"Terminal\" to do script \"" + commandString + "\""};
             } else if (os.contains("nix") || os.contains("nux")) {
-                cmdArray = new String[]{"x-terminal-emulator", "-e", commandString};
+                cmdArray = new String[]{"x-terminal-emulator", "-e", "bash -c '" + commandString + "; exec bash'"};
             } else {
                 throw new IOException("Unsupported OS: " + os);
             }
