@@ -29,7 +29,8 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
     @Override
     public void registerExtenderCallbacks(IBurpExtenderCallbacks callbacks) {
         this.callbacks = callbacks;
-        callbacks.setExtensionName("BFFFUF Extender");
+        callbacks.printOutput("Author: opcod3r - github.com/rodnt");
+        callbacks.setExtensionName("bffuf");
         callbacks.registerContextMenuFactory(this);
 
         configFilePath = System.getProperty("user.home") + "/.config/bffuf/bffuf.config.toml";
@@ -244,7 +245,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
             tomlWriter.write(data, new File(configFilePath));
             callbacks.printOutput("Configuration saved successfully.");
         } catch (IOException e) {
-            callbacks.printError("Failed to save configuration:" + e.getMessage());
+            callbacks.printError("Failed to save configuration: " + e.getMessage());
         }
     }
 
@@ -429,7 +430,7 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, ITab {
             if (os.contains("mac")) {
                 cmdArray = new String[]{"/usr/bin/osascript", "-e", "tell application \"Terminal\" to do script \"" + commandString + "\""};
             } else if (os.contains("nix") || os.contains("nux")) {
-                cmdArray = new String[]{"/bin/bash", "-c", commandString};
+                cmdArray = new String[]{"x-terminal-emulator", "-e", commandString};
             } else {
                 throw new IOException("Unsupported OS: " + os);
             }
