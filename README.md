@@ -33,6 +33,9 @@ brew install openjdk@21
 
 ### Pocs
 
+- Main Window
+![](/static/config_main.png)
+
 - Repeater exec
 ![](/static/exec_repeater.png)
 
@@ -55,6 +58,21 @@ brew install openjdk@21
 2. Right-click to open the context menu and select `bfffuf`.
 3. Choose the desired fuzzing mode: `Cluster Bomb`, `Pitchfork`, or `Sniper`.
 4. The extension will save the request and run FFUF with the specified configurations.
+
+#### Usage
+1. `Cluster Bomb` and `Pitchfork` you can set the FUZZ1 and FUZZ2 .. FUZZ4 wordlist write at the repeater example:
+
+```http
+GET /FUZZ1?id=FUZZ2 HTTP/1.1
+Host: foo
+```
+
+2. Sniper mode, only work you if set request at the main menu and write at the request the placeholder SNIPER
+
+```http
+GET /SNIPER HTTP/1.1
+Host: foo
+```
 
 ## Dependencies
 
