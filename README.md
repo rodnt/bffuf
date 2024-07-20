@@ -99,8 +99,8 @@ sniperWordlist = "/path/to/sniperWordlist.txt"
 
 ## Videos
 
-[![Config Video multi wordlists](https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg)](https://github.com/rodnt/bffuf/raw/main/static/multipleWordLists.mov)
+![Config](/static/config_bffuf.gif)
 
-[![Config](https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg)](https://github.com/rodnt/bffuf/raw/main/static/config_bffuf.mov)
+![Running](/static/running.gif)
 
-[![Running video](https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg)](https://github.com/rodnt/bffuf/blob/main/static/running.mov)
+![WordLists](/static/multipleWordLists.gif)
