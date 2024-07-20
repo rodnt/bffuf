@@ -2,6 +2,12 @@
 
 BFFUF is an extension for Burp Suite that allows you to configure and run FFUF (Fuzz Faster U Fool) directly from Burp. This extension provides a graphical interface to set various FFUF options, save request configurations, and perform fuzzing attacks directly from the tool.
 
+
+# IMPORTANT 
+
+- BETA VERSION!
+- Sniper mode only work if you choose the proto flag!!! 🚨
+
 ## Features
 
 - Configure wordlists for different fuzzing markers.
@@ -13,7 +19,13 @@ BFFUF is an extension for Burp Suite that allows you to configure and run FFUF (
 ## Installation
 
 > Requires OpenJDK >= 21
-> sudo apt install openjdk-21-jdk #linux users
+
+```bash
+# linux users
+sudo apt install openjdk-21-jdk
+# OSX With Brew
+brew install openjdk@21
+```
 
 1. Compile the source code and generate a JAR file.
 2. In Burp Suite, go to the `Extender` tab and select `Add`.
@@ -30,16 +42,6 @@ BFFUF is an extension for Burp Suite that allows you to configure and run FFUF (
 - Config
 ![](/static/configuration_terminal_request.png)
 
-- Config Video multi wordlists
-![](https://github.com/rodnt/bffuf/raw/main/static/multipleWordLists.mov)
-
-- Config 
-![](https://github.com/rodnt/bffuf/raw/main/static/config_bffuf.mov)
-
-- Running video
-![](https://github.com/rodnt/bffuf/blob/main/static/running.mov)
-
-## Usage
 
 ### Configuration
 
@@ -72,7 +74,11 @@ wordlist4 = "/path/to/wordlist4.txt"
 sniperWordlist = "/path/to/sniperWordlist.txt"
 ```
 
-# IMPORTANT 
 
-- BETA VERSION!
-- Sniper mode only work if you choose the proto flag!!! 🚨
+## Videos
+
+[![Config Video multi wordlists](https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg)](https://github.com/rodnt/bffuf/raw/main/static/multipleWordLists.mov)
+
+[![Config](https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg)](https://github.com/rodnt/bffuf/raw/main/static/config_bffuf.mov)
+
+[![Running video](https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg)](https://github.com/rodnt/bffuf/blob/main/static/running.mov)
