@@ -1,6 +1,6 @@
-# BFFFUF ( Burp Extension for FFUF @ffuf )
+# BFFUF ( Burp Extension for FFUF @ffuf )
 
-BFFFUF is an extension for Burp Suite that allows you to configure and run FFUF (Fuzz Faster U Fool) directly from Burp. This extension provides a graphical interface to set various FFUF options, save request configurations, and perform fuzzing attacks directly from the tool.
+BFFUF is an extension for Burp Suite that allows you to configure and run FFUF (Fuzz Faster U Fool) directly from Burp. This extension provides a graphical interface to set various FFUF options, save request configurations, and perform fuzzing attacks directly from the tool.
 
 ## Features
 
