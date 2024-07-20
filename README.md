@@ -45,6 +45,10 @@ brew install openjdk@21
 - Config
 ![](/static/configuration_terminal_request.png)
 
+- PRO Version ONLY 💸 ( Issue scan finished )
+
+![](/static/image.png)
+
 
 ### Configuration
 
