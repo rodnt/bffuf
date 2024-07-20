@@ -12,9 +12,32 @@ BFFUF is an extension for Burp Suite that allows you to configure and run FFUF (
 
 ## Installation
 
+> Requires OpenJDK >= 21
+> sudo apt install openjdk-21-jdk #linux users
+
 1. Compile the source code and generate a JAR file.
 2. In Burp Suite, go to the `Extender` tab and select `Add`.
 3. Choose the generated JAR file and add the extension.
+
+### Pocs
+
+- Repeater exec
+![](/static/exec_repeater.png)
+
+- Intruder Exec
+![](/static/exec_intruder.png)
+
+- Config
+![](/static/configuration_terminal_request.png)
+
+- Config Video multi wordlists
+![](/static/multipleWordLists.mov)
+
+- Config 
+![](/static/config_bffuf.mov)
+
+- Running video
+![](/static/running.mov)
 
 ## Usage
 
@@ -47,3 +70,9 @@ wordlist2 = "/path/to/wordlist2.txt"
 wordlist3 = "/path/to/wordlist3.txt"
 wordlist4 = "/path/to/wordlist4.txt"
 sniperWordlist = "/path/to/sniperWordlist.txt"
+```
+
+# IMPORTANT 
+
+- BETA VERSION!
+- Sniper mode only work if you choose the proto flag!!! 🚨
