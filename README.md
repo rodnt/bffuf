@@ -34,7 +34,7 @@ brew install openjdk@21
 ### Pocs
 
 - Main Window
-![](/static/config_main.png)
+![](/static/painelv1.png)
 
 - Repeater exec
 ![](/static/exec_repeater.png)
