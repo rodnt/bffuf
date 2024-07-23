@@ -28,8 +28,11 @@ brew install openjdk@21
 ```
 
 1. Compile the source code and generate a JAR file.
+```bash
+./gradlew shadowJar
+```
 2. In Burp Suite, go to the `Extender` tab and select `Add`.
-3. Choose the generated JAR file and add the extension.
+4. Choose the generated JAR file and add the extension.
 
 ### Pocs
 
@@ -46,9 +49,6 @@ brew install openjdk@21
 ![](/static/configuration_terminal_request.png)
 
 - PRO Version ONLY 💸 ( Issue scan finished )
-
-![](/static/image.png)
-
 
 ### Configuration
 
